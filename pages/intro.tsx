@@ -33,7 +33,18 @@ const Intro: NextPage = () => {
       <div className={styles.contentContainer}>
         <div className={styles.maxWContainer}>
           <div className={styles.personContainer}>
-            <div className={styles.person}>
+            <motion.div
+              initial={{ y: "150%" }}
+              animate={{
+                y: "0%",
+                transition: {
+                  duration: 2,
+                  delay: 4.5,
+                  ease: [0.77, 0, 0.175, 1],
+                },
+              }}
+              className={styles.person}
+            >
               {/* <Image
               src="/headshot.jpeg"
               alt=""
@@ -41,8 +52,57 @@ const Intro: NextPage = () => {
               height="320"
               layout="responsive"
             /> */}
-              <img src="/headshot.jpeg" alt="" />
-            </div>
+              <div className={styles.personTwo}>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src="/headshot.jpeg"
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                    style={{
+                      borderRadius: "10px",
+                    }}
+                  />
+                </div>
+                <motion.div
+                  initial={{ y: "-100%" }}
+                  animate={{
+                    y: "0%",
+                    transition: {
+                      duration: 1,
+                      delay: 6.1,
+                      ease: [0.77, 0, 0.175, 1],
+                    },
+                  }}
+                  className={styles.nameContainer}
+                >
+                  <motion.h3
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: 1,
+                      transition: {
+                        duration: 0.2,
+                        delay: 7,
+                      },
+                    }}
+                  >
+                    Simon Gribert
+                  </motion.h3>
+                  <motion.h4
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: 1,
+                      transition: {
+                        duration: 0.2,
+                        delay: 7,
+                      },
+                    }}
+                  >
+                    Full Stack Developer
+                  </motion.h4>
+                </motion.div>
+              </div>
+            </motion.div>
             <div className={styles.person} style={{ marginTop: "96px" }}>
               {/* <Image
               src="/headshot.jpeg"
@@ -51,7 +111,26 @@ const Intro: NextPage = () => {
               height="320"
               layout="responsive"
             /> */}
-              <img src="/headshot.jpeg" alt="" />
+              {/* <Image
+                src="/headshot.jpeg"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              /> */}
+              <div className={styles.personTwo}>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src="/headshot.jpeg"
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className={styles.nameContainer}>
+                  <h3>Michael Gribert</h3>
+                  <h4>Senior Industry Salesman</h4>
+                </div>
+              </div>
             </div>
             <div className={styles.person}>
               {/* <Image
@@ -61,7 +140,26 @@ const Intro: NextPage = () => {
               height="320"
               layout="responsive"
             /> */}
-              <img src="/headshot.jpeg" alt="" />
+              {/* <Image
+                src="/headshot.jpeg"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+              /> */}
+              <div className={styles.personTwo}>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src="/headshot.jpeg"
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className={styles.nameContainer}>
+                  <h3>Jakob Gribert</h3>
+                  <h4>Senior Logistics Expert</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
