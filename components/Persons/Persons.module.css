@@ -35,6 +35,7 @@
 .nameContainer h4 {
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 16px;
 }
 
 .hoverContainer {
@@ -90,4 +91,46 @@
   border-radius: 50%;
   padding: 12px;
   margin-right:8px;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+.maxWContainer {
+  height: 100%;
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.personContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hoverBackground {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  /* pointer-events: none; */
+}
+
+.buttonContainer {
+  text-align: right;
+}
+
+.buttonContainer button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }

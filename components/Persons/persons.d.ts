@@ -5,5 +5,5 @@ export type PersonProps = {
   name: string;
   title: string;
   index: number;
-  backgroundAnimation: AnimationControls;
+  // backgroundAnimation: AnimationControls;
 };

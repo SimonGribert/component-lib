@@ -1,1 +1,2 @@
-export { default as Person } from "./Person";
+export { default as Persons } from "./Persons";
+export { default as ImageSlider } from "./ImageSlider";
